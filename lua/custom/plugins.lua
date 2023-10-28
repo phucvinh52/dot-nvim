@@ -171,7 +171,17 @@ local plugins = {
       require "custom.configs.scrollbar"
     end,
   },
-  
+  {
+    "echasnovski/mini.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("mini.animate").setup {
+        scroll = {
+          enable = false,
+        },
+      }
+    end,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
