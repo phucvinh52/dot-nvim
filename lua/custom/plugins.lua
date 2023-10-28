@@ -127,6 +127,13 @@ local plugins = {
   {
     "sheerun/vim-polyglot"
   },
+  {
+    "petertriho/nvim-scrollbar",
+    event = "WinScrolled",
+    config = function()
+      require "custom.configs.scrollbar"
+    end,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
