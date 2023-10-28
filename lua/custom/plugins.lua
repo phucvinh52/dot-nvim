@@ -174,7 +174,11 @@ local plugins = {
   {
     "echasnovski/mini.nvim",
     config = function()
-      require("mini.map").setup({})
+      require("mini.animate").setup {
+        scroll = {
+          enable = false,
+        },
+      }
     end,
   },
   -- To make a plugin not be loaded
