@@ -173,13 +173,7 @@ local plugins = {
   },
   {
     "echasnovski/mini.nvim",
-    event = "VeryLazy",
     config = function()
-      require("mini.animate").setup {
-        scroll = {
-          enable = false,
-        },
-      }
       require("mini.map").setup()
     end,
   },
