@@ -173,12 +173,9 @@ local plugins = {
   },
   {
     "echasnovski/mini.nvim",
+    event = "WinScrolled",
     config = function()
-      require("mini.animate").setup {
-        scroll = {
-          enable = false,
-        },
-      }
+      require("mini.map").setup({})
     end,
   },
   -- To make a plugin not be loaded
