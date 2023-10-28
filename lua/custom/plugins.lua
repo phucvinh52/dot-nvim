@@ -173,7 +173,7 @@ local plugins = {
   },
   {
     "echasnovski/mini.nvim",
-    event = "WinScrolled",
+    event = "VeryLazy",
     config = function()
       require("mini.map").setup({})
     end,
