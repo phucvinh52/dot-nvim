@@ -179,7 +179,7 @@ local plugins = {
         scroll = {
           enable = true,
         },
-      },
+      }
       require("mini.map").setup {
         
       }
