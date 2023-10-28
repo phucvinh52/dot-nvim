@@ -174,7 +174,7 @@ local plugins = {
   {
     "echasnovski/mini.nvim",
     config = function()
-      require("mini.map").setup()
+      require("mini.map").setup({})
     end,
   },
   -- To make a plugin not be loaded
