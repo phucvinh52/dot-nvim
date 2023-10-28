@@ -177,7 +177,7 @@ local plugins = {
     config = function()
       require("mini.animate").setup {
         scroll = {
-          enable = true,
+          enable = false,
         },
       }
       require("mini.map").setup {
