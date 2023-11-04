@@ -11,7 +11,14 @@ local plugins = {
         library = { plugins = { "nvim-dap-ui" }, types = true },
        })
     end,
-  },
+   },
+   {
+      "rcarriga/nvim-dap-ui",
+      config = function()
+         require("dapui").setup()
+      end,
+      dependencies = { "mfussenegger/nvim-dap" },
+   },
   -- Override plugin definition options
 
   {
