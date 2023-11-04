@@ -4,6 +4,14 @@ local cmp = require "cmp"
 ---@type NvPluginSpec[]
 local plugins = {
 
+   {
+    "folke/neodev.nvim",
+    config = function()
+      require("neodev").setup({
+        library = { plugins = { "nvim-dap-ui" }, types = true },
+       })
+    end,
+  },
   -- Override plugin definition options
 
   {
@@ -47,6 +55,9 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
+
+  
 
   {
     "ray-x/go.nvim",
