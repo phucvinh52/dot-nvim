@@ -4,6 +4,12 @@ local M = {}
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["<leader>rre"] = {
+      function ()
+        vim.diagnostic.open_float();
+      end,
+      "open detail error"
+    }
   },
   v = {
     [">"] = { ">gv", "indent"},
