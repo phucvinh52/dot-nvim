@@ -7,3 +7,5 @@ SOME COMMAND STORED
 <leader> ra //rename file
 ```
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+
+https://wiki.termux.com/wiki/Hardware_Keyboard
